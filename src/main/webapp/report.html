@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 400px;
+            font-size: 16px;
+        }
+        .container {
+            background-color:beige;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 400px;
+        }
+         body {
+                background-color: cadetblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        select { 
+            width:100%; 
+            margin-bottom: 15px;     
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+</style>
+</head>
+<body>
+<center>    <h2>Count Students by cast, session, and Gender</h2>
+    <div class="container">
+    <form action="report" method="post">
+                <label>session:</label>
+        <select name="sessionyear" required>
+                        <option value="-1">select</option>
+                        <option value="2019-22">2019-22</option>
+                        <option value="2020-23">2020-23</option>
+                        <option value="2022-25">2022-25</option>
+                      </select>
+                      <br><br>
+                      <label>Cast:</label>
+                      <select name="cast" name="cast" required>
+                            <option value="-1">select</option>
+                            <option value="general">general</option>
+                            <option value="BC-1">BC-1</option>
+                            <option value="BC-2">BC-2</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                            <option value="other">other</option>
+                            </select>
+                      <br><br>
+
+        <label>Gender:</label>
+        <select name="gender">
+            <option value="-1">select</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Show Count</button>
+    </form>
+    </div>
+    </center>
+</body>
+
+
+</html>

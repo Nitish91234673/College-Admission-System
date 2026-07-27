@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .main {
+            background-color:#ddd;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            height:400px;
+        }
+        .main h1 {
+            color:brown;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+        button[type="submit"]
+         {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color:aquamarine;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button[type="reset"]
+         {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color:aqua;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+         }
+        input[type="text"],
+        input[type="password"]
+        {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+ </style>
+ </head>
+
+<body background="Images/backwelcome.avif">
+    <div class="main">
+        <form method="post" action="login">
+            <center>
+            <h1><u>Login Form</u></h1>
+            <label for="name">Username:</label>
+            <input type="text" name="uname">
+            <label for="pword">Password:</label>
+            <input type="password" name="pword">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            <br>
+            <br>
+            <button type="reset">Reset</button>
+            </center>
+        </form>
+    </div> 
+</body>
+</html>

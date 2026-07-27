@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-image: url("Images/img7.avif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main {
+            background-color: beige;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 400px;
+        }
+
+        .main h2 {
+            color: #4caf50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form method="post" action="reg">
+            <label for="first">First Name:</label>
+            <input type="text" name="fname" />
+
+            <label for="last">Last Name:</label>
+            <input type="text" name="lname" />
+
+            <label for="uname">User name:</label>
+            <input type="text" name="uname" />
+
+            <label for="password">Password:</label>
+            <input type="password" name="pword" />
+
+            <label for="mobile">Contact:</label>
+            <input type="text" name="contact" maxlength="10" />
+
+            <label for="gender">Gender:</label>
+            <select name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

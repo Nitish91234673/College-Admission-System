@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+      <style>
+        td {
+            color:brown;
+            
+        }
+        table{
+        font-size:30px;
+        }
+        button[type="submit"]{
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 200px;
+            font-size: 16px;
+        }
+        button[type="reset"]{
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 200px;
+            font-size: 16px;
+        }
+         input[type="text"],
+         input[type="email"],
+         input[type="date"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size:20px;
+        }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+        <div class="container">
+           <img src="Images/logomdcollege.png" width="1100" height="170">   
+            
+           <img src="Images/patlilogo.jpeg" width="200" height="170" align="right">
+         <hr>
+         <marquee>Admission Form</marquee>
+         <hr>
+        
+       
+        <center>
+            <h1><u>New Student Admission Form</u></h1>
+        </center>
+        <fieldset>
+        <legend>Student details</legend>
+        <form method=post action=append>
+            
+            <center>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input type="text"  name="name" required> 
+                    </td>
+                    <td>
+                        Father's Name:
+                    </td>
+                    <td>
+                        <input type="text" name="fname" required>
+                    </td>
+                    <td>
+                        Mother's Name:
+                    </td>
+                    <td>
+                        <input type="text" name="mname" required>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        <input type="email" name="email" required>
+                    </td>
+                    <td>
+                        Mobile no:
+                    </td>
+                    <td>
+                        <input type="text" name="mobno" required>
+                    </td>
+                    <td>
+                        DOB:
+                    </td>
+                    <td>
+                        <input type="date" name="dob" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Village:
+                    </td>
+                    <td>
+                        <input type="text" name="village" required>
+                    </td>
+                    <td>
+                        Gender:
+                    </td>
+                
+                    <td>
+                        <input type="radio" name="gender" value="male" required>  male
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="female" required>female
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="other" required>other
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                       Post office:
+                    </td>
+                    <td>
+                        <input type="text" name="postoffice" required>
+                    </td>
+                    <td>
+                        Cast Category:
+                    </td>
+                    <td>
+
+                        <select name="cast" name="cast" required>
+                            <option value="-1">select</option>
+                            <option value="general">general</option>
+                            <option value="BC-1">BC-1</option>
+                            <option value="BC-2">BC-2</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                            <option value="other">other</option>
+
+                     </select>
+                     </td>
+                     <td>
+                        Police Station:
+                     </td>
+                     <td>
+                        <input type="text" name="police" required>
+                     </td>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Distric:
+                    </td>
+                    <td>
+                        <input type="text" name="distric" required>
+                    </td>
+                    <td>
+                        State:
+                    </td>
+                    <td>
+                        <input type="text" name="state" required>
+                    </td>
+                    <td>
+                        Pin Code:
+                    </td>
+                    <td>
+                        <input type="text" name="pin" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Country:
+                    </td>
+                    <td>
+                        <input type="text" name="country" required>
+                    </td>
+                    <td>
+                        Session:
+                    </td>
+                    <td>
+                      <select name="session" required>
+                        <option value="-1">select</option>
+                        <option value="2019-22">2019-22</option>
+                        <option value="2020-23">2020-23</option>
+                        <option value="2022-25">2022-25</option>
+                      </select>
+                    </td>
+                    <td>
+                        Blood group:
+                    </td>
+                    <td>
+                        <select name="blood" required>
+                            <option value="-1">select</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Marital Status:
+                    </td>
+                    <td>
+                        <input type="radio" name="marital" value="married" required>Married
+
+                    </td>
+                    <td>
+                        <input type="radio" name="marital" value="unmarried" required>Unmarried
+                    </td>
+                    <td>
+                        Religion:
+                    </td>
+                    <td>
+                        <input type="text" name="religion" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Physically challenged:
+                    </td>
+                    <td>
+                        <input type="radio" name="phy" value="yes" required>Yes
+                    </td>
+                    <td>
+                        <input type="radio" name="phy" value="no" required>No
+                    </td>
+                    <td>
+                       Nationality:
+                    </td>
+                    <td>
+                        <input type="text" name="nationality" required>
+                    </td>
+                </tr>
+                <tr>
+                <td>
+                Applicant Id:
+                </td>
+                <td>
+                <input type="text" name="id" required>
+                </td>
+                <td>
+                Subject:
+                </td>
+                <td>
+                <select name="subject" required>
+                <option value="-1">select</option>
+                <option value="Political Science">Political Science</option>
+                <option value="phycology">phycology</option>
+                <option value="Hindi">Hindi</option>
+                <option value="English">English</option>
+                <option value="History">History</option>
+                <option value="Geography">Geography</option>
+                <option vlue="Economics">Economics</option>
+                 </select>
+                </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <button type="submit">Save</button>
+            <button type="reset">Clear</button>
+            </center>
+        </fieldset>
+        </form>
+        </div>
+        </fieldset>
+    </body>
+</html>

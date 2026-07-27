@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+     body {
+            background-color: cadetblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+       input[type="text"]{ 
+            width:100%; 
+            margin-bottom: 15px;     
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        } 
+         label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+        .container {
+            background-color:beige;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 400px;
+        }
+         .container h2 {
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+         button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+         button[type="reset"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+</style>
+</head>
+<body>
+   <center>
+   <h1>Search the details of the specific Student</h1>
+   <br>
+   <br>
+   <div class="container">
+   <form method=post action=search>
+   <h2>fill the details of the student that you want to search</h2>
+   <br>
+    
+    <label>Applicant Id:</label>
+    <input type="text" name="applicantid">
+    <br>
+    <br>
+    <button type="submit">Search</button>
+    <br>
+    <br>
+    <button type="reset">Clear</button>
+    </div>
+   </form>
+   </center>
+</body>
+</html>

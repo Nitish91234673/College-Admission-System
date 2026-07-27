@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+            background-color:beige;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 400px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color:black;
+            font-weight: bold;
+        }
+           button[type="submit"]{
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width:100%;
+            font-size: 16px;
+        }
+        button[type="reset"]{
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width:100%;
+            font-size: 16px;
+        }
+        select { 
+            width:100%; 
+            margin-bottom: 15px;     
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .container h2 {
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+        h1{
+            color:rgb(240, 19, 100);
+        }
+        </style>
+    </head>
+    <body background="Images/img3.jpg">
+            <center>
+                <h1><u>Display The All Records Of The  Specific Students</u></h1>
+            <br>
+            <br>
+            <div class="container">
+                <form method="post" action=showrecord> 
+               <h2>fill the session of the students that you want to show</h2>
+                <br>
+               <label>Session Year:</label>
+               <select name="sessionyear">
+               <option value="-1">select</option>
+               <option value="2019-22">2019-22</option>
+               <option value="2020-23">2020-23</option>
+               <option value="2022-25">2022-25</option>
+               </select>
+               <br>
+               <br>
+               <button type="submit">Show</button>
+               <br>
+               <br>
+               <button type="reset">Clear</button>
+              </form>
+            </div>
+            </center>
+    </body>
+</html>
